@@ -1,3 +1,6 @@
+import heroImage from "@/public/hero-image-square.png"
+import Image from "next/image"
+
 
 export default function About() {
     return (
@@ -9,10 +12,11 @@ export default function About() {
 
                 <div className="grid items-center gap-8 mb-12 md:grid-cols-2">
                     <div className="relative h-[300px] w-full">
-                        <img
-                            src="/hero-image-square.png"
+                        <Image
+                            src={heroImage}
                             alt="PrintForge Community - A group of makers collaborating on 3D printing projects"
                             width="350"
+                            className="absolute inset-0 w-full h-full object-cover rounded-lg"
                         />
                     </div>
                     <div>
