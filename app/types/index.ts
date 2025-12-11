@@ -26,6 +26,10 @@ export type CategoryPageProps = {
     }>
 }
 
+
+export type GetModelsParams = {
+    category?: string
+}
 // Page Types
 export type RootLayoutProps = Readonly<{
   children: React.ReactNode;
